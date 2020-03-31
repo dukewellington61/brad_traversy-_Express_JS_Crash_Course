@@ -1,0 +1,21 @@
+{
+  "name": "brad_traversy_express_crash_course",
+  "version": "1.0.0",
+  "description": "brad_traversy_express_crash_course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "moment": "^2.24.0",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
