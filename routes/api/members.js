@@ -30,7 +30,8 @@ router.post('/', (req, res) => {
 
     members.push(newMember);
 
-   res.json(members);
+//    res.json(members);
+res.redirect('/');
 });
 
 // Update Member

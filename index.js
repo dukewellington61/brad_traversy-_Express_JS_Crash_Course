@@ -15,9 +15,9 @@ const app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'})); /* sets template engine to handlebars, layout is called 'main'  */
 app.set('view engine', 'handlebars'); /* sets view engine to handlebars */
 
-// Body Parser Middleware - to access json data in request-object on post & put requests
+// Body Parser Middleware - to parse data in body of post and put request into json
 app.use(express.json());
-app.use(express.urlencoded({ extende: false })); /* check out https://expressjs.com/en/api.html for more */
+app.use(express.urlencoded({ extended: false })); /* to access data send from a html form */
 
 // Homepage Route (if static folder is put above this the index.html in the publich folder is beeing rendered)
 app.get('/', (req, res) => res.render('index', {
